@@ -1,0 +1,23 @@
+/* Custom styles for overriding or additional design */
+
+/* Example: Change the background color of the navbar */
+.navbar {
+    background-color: #004d40; /* Dark teal */
+}
+
+/* Example: Add a custom hover effect for buttons */
+button, .btn {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover, .btn:hover {
+    background-color: #00695c; /* Teal */
+    color: #ffffff; /* White text */
+    transform: scale(1.1);
+}
+
+/* Example: Custom footer style */
+footer {
+    background-color: #00251a; /* Very dark green */
+    color: #a7ffeb; /* Light teal text */
+}

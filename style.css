@@ -1,0 +1,323 @@
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #2E7D32;
+}
+
+/* Hero Section Slideshow */
+@keyframes hero-slideshow {
+    0% { background: url('assets/images/background1.png') no-repeat center/cover; }
+    33% { background: url('assets/images/background2.png') no-repeat center/cover; }
+    66% { background: url('assets/images/background3.png') no-repeat center/cover; }
+    100% { background: url('assets/images/background1.png') no-repeat center/cover; }
+}
+
+.hero {
+    animation: hero-slideshow 15s infinite; /* 15 seconds for a smooth infinite slideshow */
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    color: #F1F8E9; /* Light green text for better contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero p {
+    font-size: 1.5rem; /* Increased font size */
+    font-weight: 400; /* Adjusted weight for better visibility */
+    margin-top: 10px; /* Added spacing between the heading and paragraph */
+    color: #FFFFFF; /* Ensured text color is white for visibility */
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.slideshow-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    animation: slideshow 12s infinite;
+}
+
+.slideshow-image:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slideshow-image:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.slideshow-image:nth-child(3) {
+    animation-delay: 8s;
+}
+
+@keyframes slideshow {
+    0%, 33% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Navbar */
+.navbar {
+    background-color: #F4D03F !important; /* Softer yellow for better aesthetics */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    color: #333333 !important; /* Dark text for contrast */
+    font-weight: 500;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #555555 !important; /* Slightly darker hover effect */
+    background-color: rgba(0, 0, 0, 0.05); /* Subtle hover background */
+}
+
+.navbar-brand {
+    color: #333333 !important; /* Dark text for the brand */
+}
+
+.navbar-toggler {
+    border-color: #333333; /* Dark border for the hamburger icon */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Black hamburger icon */
+}
+
+/* Always show the hamburger menu */
+.navbar-toggler {
+    display: block !important; /* Ensure the hamburger menu is always visible */
+}
+
+.collapse.navbar-collapse {
+    display: none !important; /* Hide the menu by default */
+}
+
+.collapse.navbar-collapse.show {
+    display: block !important; /* Show the menu when toggled */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #FFD700; /* Yellow-ish background for dropdown */
+    border: none;
+    border-radius: 5px;
+    animation: slideDown 0.3s ease-in-out;
+}
+
+.dropdown-item {
+    color: #333333; /* Dark text for dropdown items */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #FFC107; /* Slightly darker yellow on hover */
+    color: #FFFFFF; /* White text */
+}
+
+/* Slide Down Animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section Backgrounds */
+#about, #events .border {
+    background-color: #E8F5E9; /* Light green */
+    color: #1B5E20; /* Dark green text */
+}
+
+#portfolio, .service-card {
+    background-color: #F1F8E9; /* Very light green */
+}
+
+/* Cards and Images */
+.service-card, #portfolio img, #events .border {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 10px; /* Rounded corners for a softer look */
+}
+
+.service-card:hover, #events .border:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Section */
+#contact input, #contact textarea {
+    border-radius: 10px;
+    border: 1px solid #C8E6C9; /* Light green border */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#contact input:focus, #contact textarea:focus {
+    border-color: #66BB6A; /* Brighter green on focus */
+    box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+}
+
+/* Footer */
+footer {
+    background-color: #1B5E20; /* Darker green */
+    color: #E8F5E9; /* Light green text */
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Medium green */
+    color: #FFFFFF; /* White text */
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    transform: scale(1.1);
+    background-color: #388E3C; /* Darker green on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional styles for detailed pages */
+section {
+    padding: 60px 0;
+    background-color: #F9FBE7; /* Very light earthy tone */
+}
+
+section h1 {
+    font-size: 2.5rem;
+    color: #2E7D32; /* Dark green */
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4E342E; /* Earthy brown text */
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #4CAF50; /* Medium green */
+    color: #FFFFFF; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #388E3C; /* Darker green */
+    transform: scale(1.05);
+}
+
+/* Page Headers */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2E7D32; /* Dark green */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Forms */
+form {
+    font-family: 'Lato', sans-serif;
+}
+
+form input, form textarea, form select {
+    border-radius: 10px;
+    border: 1px solid #C8E6C9; /* Light green border */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    border-color: #66BB6A; /* Brighter green on focus */
+    box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+}
+
+form button {
+    background-color: #4CAF50; /* Medium green */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #388E3C; /* Darker green */
+    transform: scale(1.05);
+}
+
+/* Accordion (FAQ) */
+.accordion-button {
+    background-color: #E8F5E9; /* Light green */
+    color: #1B5E20; /* Dark green text */
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-button:hover {
+    background-color: #C8E6C9; /* Softer green */
+    color: #2E7D32;
+}
+
+.accordion-body {
+    font-family: 'Lato', sans-serif;
+    color: #4E342E; /* Earthy brown text */
+}

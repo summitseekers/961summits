@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>961Summits - Lebanon's Beautiful Landscapes</title>
+  <link rel="icon" href="assets/images/logo web-01 1.svg" type="image/svg+xml"> <!-- Updated favicon link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="custom.css"> <!-- Added second external CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#home">
+        <img src="assets/images/logo web-01 1.svg" alt="961Summits Logo" width="60" height="60" class="me-2"> <!-- Updated logo size -->
+        <span style="font-family: 'Playfair Display', serif;">961Summits</span>
+      </a>
+      <div class="d-flex align-items-center">
+        <!-- Always visible links -->
+        <ul class="navbar-nav d-none d-lg-flex">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        </ul>
+        <!-- Hamburger menu -->
+        <div class="dropdown">
+          <button class="navbar-toggler dropdown-toggle" type="button" id="hamburgerMenu" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="hamburgerMenu">
+            <li><a class="dropdown-item" href="#home">Home</a></li>
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="services.html">Services</a></li>
+            <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+            <li><a class="dropdown-item" href="events.html">Events</a></li>
+            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="survey.html">Survey</a></li>
+            <li><a class="dropdown-item" href="signup-signin.html">Sign In</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="vh-100 d-flex align-items-center justify-content-center text-white hero">
+    <div class="slideshow-container">
+      <div class="slideshow-image" style="background-image: url('assets/images/background1.png');"></div>
+      <div class="slideshow-image" style="background-image: url('assets/images/background2.png');"></div>
+      <div class="slideshow-image" style="background-image: url('assets/images/background3.png');"></div>
+    </div>
+    <div class="text-center position-absolute" data-aos="zoom-in">
+      <h1 class="display-3 fw-bold" style="font-family: 'Playfair Display', serif;">Explore Lebanon's Summits</h1>
+      <p class="lead" style="font-family: 'Lato', sans-serif;">Discover breathtaking landscapes and thrilling adventures.</p>
+      <a href="#about" class="btn btn-primary mt-4 px-4 py-2">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-light text-center" data-aos="fade-up">
+    <div class="container">
+      <h2 class="fw-bold" style="font-family: 'Playfair Display', serif;">About 961Summits</h2>
+      <p class="lead" style="font-family: 'Lato', sans-serif;">We are passionate about showcasing Lebanon's natural beauty and inspiring adventure.</p>
+      <img src="assets/images/about.jpg" alt="About Hiking" class="img-fluid rounded shadow mt-3">
+      <a href="about.html" class="btn btn-success mt-4 px-4 py-2">Read More</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold" data-aos="fade-up" style="font-family: 'Playfair Display', serif;">Our Services</h2>
+      <div class="row mt-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="p-4 border rounded service-card h-100 shadow-sm">
+            <img src="assets/images/trail guides.png" alt="Trail Guides" class="img-fluid rounded mb-3" style="width: 100%; height: 200px; object-fit: cover;"> <!-- Consistent dimensions -->
+            <h5 style="font-family: 'Playfair Display', serif;">Trail Guides</h5>
+            <p style="font-family: 'Lato', sans-serif;">Expert guides to lead you through Lebanon's best trails.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="p-4 border rounded service-card h-100 shadow-sm">
+            <img src="assets/images/adventure planning.png" alt="Adventure Planning" class="img-fluid rounded mb-3" style="width: 100%; height: 200px; object-fit: cover;"> <!-- Consistent dimensions -->
+            <h5 style="font-family: 'Playfair Display', serif;">Adventure Planning</h5>
+            <p style="font-family: 'Lato', sans-serif;">Custom hiking and adventure packages tailored to your needs.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="p-4 border rounded service-card h-100 shadow-sm">
+            <img src="assets/images/equipment rentals.png" alt="Equipment Rentals" class="img-fluid rounded mb-3" style="width: 100%; height: 200px; object-fit: cover;"> <!-- Consistent dimensions -->
+            <h5 style="font-family: 'Playfair Display', serif;">Equipment Rentals</h5>
+            <p style="font-family: 'Lato', sans-serif;">High-quality gear for a safe and enjoyable experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="fw-bold" data-aos="fade-up" style="font-family: 'Playfair Display', serif;">Our Adventures</h2>
+      <div class="row mt-4 g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <img src="assets/images/trail1.jpg" alt="Chouwen Lake - Trail 1" class="img-fluid rounded shadow" style="width: 100%; height: 300px; object-fit: cover;"> <!-- Added consistent dimensions -->
+          <p class="mt-2" style="font-family: 'Lato', sans-serif;">Chouwen Lake - A serene and picturesque trail.</p>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <img src="assets/images/trail2.png" alt="Baloue Balaa Gorge and Waterfall - Trail 2" class="img-fluid rounded shadow" style="width: 100%; height: 300px; object-fit: cover;"> <!-- Added consistent dimensions -->
+          <p class="mt-2" style="font-family: 'Lato', sans-serif;">Baloue Balaa - A stunning gorge and waterfall, perfect for nature lovers.</p>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/trail3.png" alt="Kfarhelda Waterfall - Trail 3" class="img-fluid rounded shadow" style="width: 100%; height: 300px; object-fit: cover;"> <!-- Updated image source -->
+          <p class="mt-2" style="font-family: 'Lato', sans-serif;">Kfarhelda Waterfall - A breathtaking natural wonder.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="fw-bold" style="font-family: 'Playfair Display', serif;" data-aos="fade-up">What They Say About Us</h2>
+      <div id="reviewsCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="p-4">
+              <p class="lead" style="font-family: 'Lato', sans-serif;">"961Summits made our hiking experience unforgettable! The guides were professional and the trails were breathtaking."</p>
+              <h5 class="fw-bold mt-3" style="font-family: 'Playfair Display', serif;">- Sarah L.</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="p-4">
+              <p class="lead" style="font-family: 'Lato', sans-serif;">"The adventure planning service was top-notch. They customized everything to fit our needs perfectly."</p>
+              <h5 class="fw-bold mt-3" style="font-family: 'Playfair Display', serif;">- James T.</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="p-4">
+              <p class="lead" style="font-family: 'Lato', sans-serif;">"I rented equipment from 961Summits, and it was all high-quality and well-maintained. Highly recommend!"</p>
+              <h5 class="fw-bold mt-3" style="font-family: 'Playfair Display', serif;">- Maria K.</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events" class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold" data-aos="fade-up" style="font-family: 'Playfair Display', serif;">Upcoming Events</h2>
+      <div class="row mt-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <a href="events.html#sunset-hike" class="text-decoration-none text-dark">
+            <div class="p-4 border rounded h-100 shadow-sm">
+              <img src="assets/images/sunset hike.png" alt="Sunset Hike" class="img-fluid rounded mb-3"> <!-- Updated image source -->
+              <h5 style="font-family: 'Playfair Display', serif;">Sunset Hike</h5>
+              <p style="font-family: 'Lato', sans-serif;">Join us for a breathtaking sunset hike on March 15th.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <a href="events.html#mountain-adventure" class="text-decoration-none text-dark">
+            <div class="p-4 border rounded h-100 shadow-sm">
+              <img src="assets/images/mountain adventure.png" alt="Mountain Adventure" class="img-fluid rounded mb-3"> <!-- Updated image source -->
+              <h5 style="font-family: 'Playfair Display', serif;">Mountain Adventure</h5>
+              <p style="font-family: 'Lato', sans-serif;">Experience the thrill of mountain hiking on April 10th.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="events.html#forest-exploration" class="text-decoration-none text-dark">
+            <div class="p-4 border rounded h-100 shadow-sm">
+              <img src="assets/images/forest exploration.png" alt="Forest Exploration" class="img-fluid rounded mb-3"> <!-- Updated image source -->
+              <h5 style="font-family: 'Playfair Display', serif;">Forest Exploration</h5>
+              <p style="font-family: 'Lato', sans-serif;">Discover Lebanon's lush forests on May 5th.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold" data-aos="fade-up" style="font-family: 'Playfair Display', serif;">Contact Us</h2>
+      <p class="lead" style="font-family: 'Lato', sans-serif;" data-aos="fade-up" data-aos-delay="100">
+        <strong>Phone:</strong> <a href="tel:+96171111111" class="text-dark">+961 71 111 111</a><br>
+        <strong>Instagram:</strong> <a href="https://www.instagram.com/961_summits" target="_blank" class="text-dark">@961_summits</a>
+      </p>
+      <form class="mt-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Email Address" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Send Message</button>
+      </form>
+
+      <!-- Social Media Buttons -->
+      <div class="social-buttons mt-4" data-aos="fade-up" data-aos-delay="300">
+        <a href="https://www.instagram.com/961_summits" class="btn btn-outline-dark mx-2" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.facebook.com/YOUR_USERNAME" class="btn btn-outline-dark mx-2" target="_blank">
+          <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://www.tiktok.com/@YOUR_USERNAME" class="btn btn-outline-dark mx-2" target="_blank">
+          <i class="fab fa-tiktok"></i> TikTok
+        </a>
+      </div>
+
+      <!-- Map -->
+      <div class="mt-4" data-aos="fade-up" data-aos-delay="400">
+        <iframe class="w-100 rounded" height="300" style="border:0;" loading="lazy"
+        src="https://www.google.com/maps/embed/v1/place?q=Lebanon&key=YOUR_NEW_API_KEY">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" data-aos="fade-up" title="Back to Top">
+    ↑
+  </button>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 961Summits. All rights reserved.
+    <div class="mt-2">
+      <p class="mb-1">Phone: <a href="tel:+96171111111" class="text-white">+961 71 111 111</a></p>
+      <a href="https://www.instagram.com/961_summits" target="_blank" class="text-white mx-2">
+        <i class="fab fa-instagram"></i> @961_summits
+      </a>
+      <a href="https://www.facebook.com/YOUR_USERNAME" target="_blank" class="text-white mx-2">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.tiktok.com/@YOUR_USERNAME" target="_blank" class="text-white mx-2">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false
+    });
+
+    // Back to Top Button Functionality
+    const backToTopButton = document.getElementById('back-to-top');
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Show/Hide Back to Top Button on Scroll
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.add("show");
+      } else {
+        backToTopButton.classList.remove("show");
+      }
+    });
+  </script>
+
+  <style>
+    /* Show/Hide class for back-to-top */
+    #back-to-top {
+      display: none;
+    }
+    #back-to-top.show {
+      display: flex;
+    }
+
+    .social-buttons a {
+      font-weight: 500;
+      border-radius: 30px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .social-buttons a:hover {
+      background-color: #2E7D32;
+      color: #fff;
+      border-color: #2E7D32;
+    }
+  </style>
+
+</body>
+</html>
